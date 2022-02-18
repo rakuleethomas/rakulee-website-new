@@ -40,11 +40,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #4834d4;
+    background: #000000;
     overflow-x: hidden;
-    background: -webkit-linear-gradient(to right, #4834d4, #341f97);
-    background: -webkit-linear-gradient(left, #4834d4, #341f97);
-    background: linear-gradient(to right, #4834d4, #341f97);
+    /* background: -webkit-linear-gradient(to right, #4834d4, #341f97);
+    background: -webkit-linear-gradient(left, #4834d4, #341f97); */
+    /* background: linear-gradient(to right, #4834d4, #341f97); */
 }
 .darker-blue{
     background: linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240);
@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: #F0BC4C;
     line-height: 1.4;
     font-weight: 500;
 }
@@ -77,7 +77,7 @@ li {
 
 p {
     line-height: 1.9;
-    color: rgba(255, 255, 255, 0.5);
+    color: #F0BC4C;
     font-size: 15px;
 }
 
@@ -524,7 +524,7 @@ ol {
     transform: rotate(-90deg);
 }
 .map-bg{
-    background: #edf6fd;
+    background: #000000;
 }
 .map-before:before{
     position: absolute;
@@ -706,9 +706,13 @@ ol {
 }
 }
 /* ##### 2.0 Header Area CSS ##### */
+.rakulee-nav-logo {
+    max-height: 75px;
+}
+
 .nav{transition: all .5s ease-in}
 .navbar-brand {
-    color: #fff;
+    color: #F0BC4C;
     font-size: 25px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -721,7 +725,7 @@ ol {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #fff;
+    color: #F0BC4C;
 }
 .navbar-nav .nav-item .nav-link:hover{color:#fed136;}
 .navbar-expand-md .navbar-nav .dropdown-menu{
@@ -737,7 +741,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
  .shrink {
     animation: .3s ease-in-out;
     animation-name: fadeInDown;
-    background-color: rgb(215, 223, 239);
+    background-color: rgb(0, 0, 0);
 }
 
 @-webkit-keyframes fadeInDown {
@@ -759,7 +763,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 /* mobile view */
 @media (max-width:500px)
 {
-    .navbar{ background: rgb(215, 223, 239);}
+    .navbar{ background: rgb(0, 0, 0);}
     .navbar-nav{
         border-top:1px solid #fed136;
         color:#fff;
@@ -800,7 +804,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
 .navbar-white.shrink .navbar-brand,
 .shrink .navbar-nav .nav-item .nav-link{
-    color: #333
+    color: #F0BC4C;
 }
 
 .navbar-dark .navbar-brand,
@@ -866,7 +870,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     border-bottom: 1px solid rgba(4, 74, 250, .2);
 }
 .hero-section.ai2{
-    background: url('../img/bg-img/ai12.jpg') no-repeat top center;
+    /* background: url('../img/bg-img/ai12.jpg') no-repeat top center; */
     background-size: cover;
 }
 
@@ -1662,6 +1666,14 @@ p.artficial:before{
 .d-blue{
     color: #13287e !important
 }
+.d-yellow {
+    color: #BD943C;
+}
+.b-yellow {
+    font-weight: 700;
+    color: #F0BC4C;
+}
+
 .b-blue{
     font-weight: 700;
     color: #044afa !important
@@ -2485,7 +2497,7 @@ p.artficial:before{
     transition: all .3s ease-in-out;
 }
 .how_icon{
-    max-width: 90px;
+    max-width: 300px;
     margin: 0 auto;
     margin-bottom: 30px
 }
@@ -2543,6 +2555,7 @@ p.artficial:before{
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
+    color: #F0BC4C;
 }
 .check-mark-icon {
     margin-right: 16px;
@@ -3995,8 +4008,10 @@ textarea:required {
 }
 
 /* ##### Footer Area ##### */
+
+
 .footer-bg{
-    background: url('../img/bg-img/bread-bg.jpg') no-repeat center right;
+   /* background: url('../img/bg-img/bread-bg.jpg') no-repeat center right;*/
     background-size: cover;
 }
 .footer-area {
@@ -4007,10 +4022,14 @@ textarea:required {
 
 .footer-content-area{
     padding: 100px 0;
+    display: flex;
+
+    justify-content: center;
     background: #192057 !important;
 }
 .footer-content-area.spec{
-    background: transparent !important;
+    margin-top: 3em;
+    background: #000 !important;
 }
 .footer-content-area.demo{
     margin-top: 70px
@@ -4037,11 +4056,41 @@ textarea:required {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }
 
-.copywrite_text > p {
+.contact_us_area {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    max-width: 80%;
+    border-bottom: 5px solid gray;
+    border-top: 5px solid gray;
+}
+
+#footer-copyright {
+    background: black;
+    width: 100%;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-logo-img {
+    margin-right: 100px;
+    width: 100px;
+    padding-bottom: 5px;
+}
+
+.copyright-text {
+    font-size: 10pt;
     margin-bottom: 20px;
+    margin-top: 30px;
+    padding-top: 15px;
     color: #fff;
     font-size: 13px;
 }
+
+
 
 .copywrite_text > p > a {
     color: #fff;
