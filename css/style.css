@@ -636,7 +636,7 @@ ol {
     min-width: 160px;
     height: 48px;
     line-height: 48px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;
@@ -647,8 +647,9 @@ ol {
     color: #fff;
     box-shadow: 0 3ox 20px rgba(0, 0, 0, 0.1);
     border-radius: 100px;
-    background-image: -webkit-linear-gradient(left, #21d397 0%, #7450fe 51%, #21d397 100%);
-    background-image: linear-gradient(to right, #21d397 0%, #7450fe 51%, #21d397 100%);
+    background-color: #F0BC4C;
+    /* background-image: -webkit-linear-gradient(left, #21d397 0%, #7450fe 51%, #21d397 100%);
+    background-image: linear-gradient(to right, #21d397 0%, #7450fe 51%, #21d397 100%); */
     -webkit-transition: all 500ms;
     transition: all 500ms;
 }
@@ -783,7 +784,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     background: #086bfe ;
     border-color: #333
 }
-.navbar-white .navbar-toggler-icon{
+.navbar-toggler-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 @media(max-width: 992px){
@@ -794,12 +795,13 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     }
     .navbar-collapse .navbar-nav .nav-item .nav-link{
         padding: 5px 12px;
-        color: #333
+        color: #F0BC4C
     }
     .navbar-expand-lg.navbar-dark {background: rgb(215, 223, 239);}
     .navbar-collapse{
         padding-top: 20px;
-        background: rgb(215, 223, 239)
+        color: #F0BC4C;
+        background: rgb(0, 0, 0)
     }
 }
 .navbar-white.shrink .navbar-brand,
@@ -808,7 +810,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
 
 .navbar-dark .navbar-brand,
-.navbar-dark .navbar-nav .nav-item .nav-link{color: #333}
+.navbar-dark .navbar-nav .nav-item .nav-link{color: #F0BC4C;}
 
 .navbar-cyan .navbar-brand,
 .navbar-cyan .navbar-nav .nav-item .nav-link{color: #04d0ff}
@@ -870,7 +872,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     border-bottom: 1px solid rgba(4, 74, 250, .2);
 }
 .hero-section.ai2{
-    /* background: url('../img/bg-img/ai12.jpg') no-repeat top center; */
+    background: url('../img/bg-img/bg-masthead.jpg') no-repeat top center;
     background-size: cover;
 }
 
@@ -1162,7 +1164,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     margin-bottom: 20px;
 }
 .special-head{
-    color: cyan !important;
+    /* color: cyan !important; */
     padding-left: 40px;
     font-size: 18px;
     position: relative;
@@ -1813,7 +1815,7 @@ p.artficial:before{
     margin-top: 8px;
     color: #333
 }
-.article p{color: #888}
+/* .article p{color: #888} */
 .article:hover,
 .article.hover{
     background-image: linear-gradient(to right, #21d397 0%, #7450fe 100%); 
@@ -1860,9 +1862,9 @@ p.artficial:before{
     margin-bottom: 10px;
     color: #13287e
 }
-.article.special p{
+/* .article.special p{
     color: #888
-}
+} */
 .article.special .i-icon{
     color: #2073e7;
     position: absolute;
@@ -5181,12 +5183,10 @@ body.light-version {
 .bl-text{
     color: #354168 !important
 }
-.g-text{
+/* .g-text{
     color: #d4d7e1 !important
-}
-.cyan{
-    color: cyan !important
-}
+} */
+
 .limited{
     max-width: 800px;
     margin: 0 auto
@@ -5250,4 +5250,15 @@ body.light-version {
 
 .post-a-comment-area {
     padding-bottom: 100px;
+}
+
+/* MISCELLANEOUS */
+
+.apple-dev-section-icons {
+    width: 100px;
+    height: 100px;
+}
+
+#banner {
+    background-color: #000;
 }
