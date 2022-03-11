@@ -663,8 +663,8 @@ ol {
     background-image: linear-gradient(to right, #fb525e 0%, #fb6850 51%, #fb525e 100%);
 }
 .info-btn.green-btn{
-    background-image: -webkit-linear-gradient(left, #0067da 0%, #0067da 51%, #0067da 100%);
-    background-image: linear-gradient(to right, #0067da 0%, #0067da 51%, #0067da 100%);
+    /* background-image: -webkit-linear-gradient(left, #0067da 0%, #0067da 51%, #0067da 100%); */
+    /* background-image: linear-gradient(to right, #0067da 0%, #0067da 51%, #0067da 100%); */
 }
 .info-btn:hover {
     background-position: right center;
@@ -1849,7 +1849,6 @@ p.artficial:before{
 }
 .article.special{
     background: #edf6fd;
-    border:none;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -1888,8 +1887,9 @@ p.artficial:before{
     max-width: 90%
 }
 .about-sec-wrapper .article{
-    background: rgba(0, 103, 218,1);
-    position: absolute;
+    background: rgba(0, 0, 0,0.50);
+    /* position: absolute; */
+    border: 1px solid gold;
     width: 70%;
     display: flex;
     height: max-content;
